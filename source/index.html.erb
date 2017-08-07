@@ -13,15 +13,28 @@
 
     <div class="col-md-4">
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city %>');">
-        <h2><%= flat.city %>, <%= flat.country %></h2>
+
+        <div class="card-category">
+          <h2><%= flat.city %>, <%= flat.country %></h2>
+        </div>
+
+        <div class="card-description">
         <h3><%= flat.owner %></h3>
         <p><%= flat.strap %></p>
+        </div>
+
       </div>
-    </div>
-    <% end %>
+
+
+  </div>
+  <% end %>
 </div>
 </div>
 
+
+<!--         <div class="card-user">
+          <%= image_tag 'logo.png' %>
+        </div> -->
 
 <!-- city: Berlin
 country: Germany
